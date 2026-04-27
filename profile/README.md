@@ -1,9 +1,5 @@
 # SCRT BEAVS — Active Altitude Control for Competitive Rocketry
  
--This organization contains [firmware][firmware] and [an accompanying simulation][sim] to allow the OSU AIAA Student Competition Rocketry Team (SCRT) to fly a rocket **as close to 10,000 feet as possible.**
-**BEAVS** is an active airbrake system for [OSU AIAA's Student Competition Rocketry Team (SCRT)](https://aiaa.oregonstate.edu/) that autonomously deploys servo-controlled drag blades mid-flight to hit a competition target altitude of exactly **10,000 feet**.
- 
--TODO based on [beavs][beavs]
 In altitude-targeting rocket competitions, teams are scored on how close to the target their rocket apogee lands. A fixed-motor rocket easily overshoots or undershoots by hundreds of feet depending on atmospheric conditions, motor variance, and launch angle. BEAVS solves this by extending physical drag blades during the unpowered ascent to bleed off excess altitude in real time — no pyrotechnics, no parachutes, just aerodynamics. The result is a rocket that can stop within a handful of feet of the target.
  
 ---
@@ -59,7 +55,6 @@ git clone https://github.com/SCRT-Capstone-2025-26/SCRT_Rocket_SIM
 cd SCRT_Rocket_SIM
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-python3 data_utilities/dataimport_utilities.py
 python3 simulation/sim.py        # opens altitude, velocity, and angle plots
 ```
 
@@ -67,7 +62,7 @@ Running `sim.py` produces interactive plots of flight altitude (m), velocity (m/
 
 ### Flash the Firmware
 
-**Requirements:** [PlatformIO](https://platformio.org/), BEAVS 2026 hardware
+**Requirements:** [PlatformIO](https://platformio.org/), [BEAVS 6](https://github.com/osu-asdt/beavs-6) board
 
 ```bash
 git clone https://github.com/SCRT-Capstone-2025-26/firmware
