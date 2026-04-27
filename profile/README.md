@@ -9,7 +9,7 @@ In altitude-targeting rocket competitions, teams are scored on how close to the 
 ```mermaid
 graph LR
     CFD["STAR-CCM+ CFD\ndrag data"] --> SIM["Flight Simulation\n(Python)"]
-    SIM --> TABLE["Lookup Table\naltitude × velocity → extension"]
+    SIM --> TABLE["Lookup Table\nangle × altitude × velocity → extension"]
     TABLE --> FW["BEAVS Firmware\n(C++ / RP2040)"]
     SENSORS["IMU @ 960 Hz\nBarometer"] --> FW
     FW --> BLADES["Servo-Actuated\nDrag Blades (0–30 mm)"]
