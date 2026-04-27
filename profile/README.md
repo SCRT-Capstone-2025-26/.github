@@ -72,6 +72,12 @@ pio run -e release -t upload
 
 See [analysis/CALIBRATION.md](https://github.com/SCRT-Capstone-2025-26/firmware/blob/main/analysis/CALIBRATION.md) for board calibration steps. Linux users need a one-time udev rule for USB access — full details in the [firmware README](https://github.com/SCRT-Capstone-2025-26/firmware#readme).
 
+## Firmware Sim
+
+![A simulation ran on the firmware](2.png)
+
+This is an example graph showing an old firmware based simulation created by running the test build on the board.
+
 ---
 
 ## Team
