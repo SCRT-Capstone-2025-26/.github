@@ -74,7 +74,7 @@ See [analysis/CALIBRATION.md](https://github.com/SCRT-Capstone-2025-26/firmware/
 
 ## Firmware Sim
 
-![A simulation ran on the firmware](2.png)
+![A simulation ran on the firmware](sim.png)
 
 This is an example graph showing an old firmware based simulation created by running the test build on the board.
 
