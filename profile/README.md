@@ -31,7 +31,7 @@ An Extended Kalman Filter (EKF) running at 960 Hz on the onboard RP2040 microcon
 ### 🔭 Physics-Based Pre-Flight Simulation
 A Python simulation incorporates drag coefficients computed from STAR-CCM+ computational fluid dynamics (CFD) runs at multiple blade extension positions. It sweeps flight conditions to produce lookup tables the firmware uses the instant the rocket clears the rail.
 
-### 🔁 Flash-Backed Mid-Flight Recovery
+### 💀 Flash-Backed Mid-Flight Recovery
 Flight state is continuously logged to onboard flash memory. If the board reboots during flight — from vibration or a power glitch — it recovers its last known altitude and velocity and resumes control automatically.
 
 ### 🧪 Hardware-in-the-Loop Testing
